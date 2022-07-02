@@ -1,7 +1,7 @@
 node default {
-  file { '/tmp/testfile':
-    ensure  => file,
-    content => 'This is a test file.',
-    owner   => 'root',
-  }
+
+}
+
+node 'puppetnode1.example.com' {
+  include role::master_server
 }
