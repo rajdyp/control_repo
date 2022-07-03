@@ -3,7 +3,7 @@ class profile::docker_container {
   docker::image { 'centos':
     ensure    => 'present',
   }
-  docker::node { 'dcw1.example.com':
+  docker::run { 'dcw1.example.com':
     image   => 'centos',
   }
 }
