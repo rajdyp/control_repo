@@ -5,6 +5,6 @@ class profile::docker_container {
   }
   docker::run { 'dcw1.example.com':
     image   => 'centos',
-    ensure    => 'present',
+    ports   => ['8080:80'],
   }
 }
