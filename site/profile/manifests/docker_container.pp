@@ -1,5 +1,5 @@
 class profile::docker_container {
-  include 'docker'
+  include docker
   docker::image { 'centos':
     ensure    => 'present',
   }
