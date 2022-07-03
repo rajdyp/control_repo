@@ -5,6 +5,6 @@ class profile::docker_container {
   }
   docker::run { 'dcw1.example.com':
     image   => 'centos',
-    ports   => ['8080:80'],
+    command => '/bin/sh -c "while true; do echo hello world; sleep 1; done"',
   }
 }
