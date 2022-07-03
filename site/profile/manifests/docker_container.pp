@@ -5,5 +5,6 @@ class profile::docker_container {
   }
   docker::run { 'dcw1.example.com':
   image   => 'centos',
+  ensure  => 'running',
   }
 }
